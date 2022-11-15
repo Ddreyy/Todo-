@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+  
+    background:#bde0fe;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    text-align: center;
+    margin-right: 15%;
+    margin-top: 12%;
+
+} 
+
+.heading{
+    color: #3f474e;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.container{
+    padding: 30px 40px;
+    top: 30%;
+    left: 35%;
+    position: absolute;
+    justify-content: center;
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 40px;
+    background-color:  #cce5fc;
+}
+
+
+#newtask input{
+    position: relative;
+    width: 70%;
+    width: 60%;
+    height: 30px;
+    border: 1px solid ;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    background: #cce5fc;
+    border-bottom: 1px solid rgb(95, 83, 83);
+}
+#newtask #userinput:focus{
+    outline: none;
+}
+
+
+#newtask button{
+    position: relative;
+    border-radius: 2px;
+    width: 70px;
+    font-size: 16px;
+    font-weight: 300;
+    height: 30px;
+    border: none;
+    background:  rgb(138, 128, 110);
+    cursor: pointer;
+    transition: 0,5s;
+    color: rgb(196, 196, 173);
+}
+
+#newtask button:hover{
+    background: rgb(95, 83, 83);
+    transform: translateX(20px 40px);
+}
+
+#task{
+    background:  #cce5fc;
+    padding: 30px 20px;
+    margin-top: 40px;
+
+  
+}
+
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    background: #cce5fc;
+    border-bottom: 1px solid rgb(95, 83, 83);
+    border-radius: 5px;
+}
+
+
+.done span{
+    text-decoration: line-through;
+    color:rgb(138, 128, 110);
+}
+
+.delete{
+    border: none;
+    background: #cce5fc;
+    color: #9bc1e2;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.delete:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+@media only screen and(max-width: 425px) {  
+    .header{
+        text-align: center;
+        margin-right: 15%;
+        margin-top: 20%;
+    }
+    .heading{
+        color: #3f474e;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .container{
+        padding: 50px 50px;
+        top: 30%;
+        left: 30%;
+        width: 50%;
+        height: 100vh;
+        
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+    }
+}
